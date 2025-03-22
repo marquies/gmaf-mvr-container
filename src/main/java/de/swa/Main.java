@@ -154,7 +154,7 @@ public class Main {
         GMAF gmaf = new GMAF();
 
         System.out.println("processCollection()_1");
-        Vector<MMFG> mmfgs = collection.getCollection();
+        Vector<MMFG> mmfgs = new Vector<>(collection.getCollection());
         for (int i = 0; i < mmfgs.size(); i++) {
             MMFG m = mmfgs.get(i);
             System.out.println(m.getGeneralMetadata().getFileName());
